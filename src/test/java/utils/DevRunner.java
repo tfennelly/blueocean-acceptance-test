@@ -32,13 +32,13 @@ import org.junit.Test;
  */
 public class DevRunner extends BOJUnitTest {
     
-    @WithPlugins("workflow-aggregator@2.1")
+    // @WithPlugins("workflow-aggregator@2.1")
     @Test
     public void runAndStayRunning() throws Exception {
         System.out.println("");
         System.out.println("------------------------------------------------------------------------------------");
         System.out.println("    A clean dev instance of Jenkins is running now.");
-        System.out.println("     - " + jenkins.getCurrentUrl());
+        System.out.println("     - " + jenkins.url.toExternalForm());
         System.out.println("");
         System.out.println("    You should now be able to develop tests against this instance without");
         System.out.println("    having to constantly restart Jenkins.");

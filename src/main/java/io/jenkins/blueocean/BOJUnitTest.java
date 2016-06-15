@@ -37,7 +37,7 @@ public abstract class BOJUnitTest extends AbstractJUnitTest {
     @Before
     public void doInit() throws IOException {
         FileWriter fileWriter = new FileWriter("./target/.jenkins_url");
-        fileWriter.write(jenkins.getCurrentUrl());
+        fileWriter.write(jenkins.url.toExternalForm());
         fileWriter.flush();
         fileWriter.close();
         new FileWriter("./target/.jenkins_test").close();
