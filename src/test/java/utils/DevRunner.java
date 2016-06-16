@@ -32,7 +32,7 @@ import org.junit.Test;
  */
 public class DevRunner extends BOJUnitTest {
     
-    // @WithPlugins("workflow-aggregator@2.1")
+    //@WithPlugins("workflow-aggregator")
     @Test
     public void runAndStayRunning() throws Exception {
         System.out.println("");
